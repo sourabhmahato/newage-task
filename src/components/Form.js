@@ -11,6 +11,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: '74%',
     margin: '0 auto',
+    [theme.breakpoints.down('sm')]: {
+      width: '95%',
+    },
   },
   inline: {
     display: 'flex',
@@ -22,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(0.5),
     minWidth: 120,
+    [theme.breakpoints.down('sm')]: {
+      width: '95%',
+    },
   },
   btnContainer: {
     margin: '10px 0',
