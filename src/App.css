@@ -9,6 +9,9 @@
   display: flex;
   position: relative;
 }
+.bg-container h1{
+  font-size: 3.5vw;
+}
 .bg{
   width: 100%;
   object-fit: cover;
@@ -26,12 +29,14 @@
   to {top: 0px;}
 }
 .bg-content p {
-  font-size: 24px;
+  font-size: 2vw;
+  display: flex;
 }
 .banner-container{
   align-items: center;
   display: flex;
   position: relative;
+  font-size: 10vw;
 }
 .bg-banner{
   width: 100%;
@@ -47,16 +52,15 @@
   /* animation: bgMove 2s; */
 }
 .banner-content h1{
-  font-size: 42px;
+  font-size: 4vw;
   text-transform: capitalize;
 }
 .banner-content p {
-  font-size: 28px;
+  font-size: 2.5vw;
 }
 .col-container{
   padding: 50px 200px;
   display: flex;
-  flex-wrap: wrap;
 }
 .col-1 {
   padding: 0 10px;
@@ -81,7 +85,7 @@
 .grid-container{
   display: flex;
   flex-direction: column;
-  margin: 0 200px;
+  margin: 0 15%;
 }
 .grid-item{
   display: flex;
@@ -111,3 +115,57 @@
   width: 74%;
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 1200px) {
+  .grid-container {
+    margin: 0 10%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .grid-container {
+    margin: 0 5%;
+  }
+  .col-container{
+    padding: 0;
+    margin: 10px;
+  }
+  .col-1 p{
+   font-size: 4.5vw;
+  }
+  .col-1 h4{
+    font-size: 6.2vw;
+  }
+  .banner-content{
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .grid-container {
+    margin: 0 3%;
+  }
+  .makeStyles-root-1{
+    width: 90%;
+    margin: 0 auto;
+  }
+ 
+}
+@media only screen and (max-width: 500px) {
+  .grid-container {
+    margin: 0 0%;
+  }
+  .grid-image {
+    width: 60%;
+  }
+  .grid-content p {
+    font-size: 4.5vw;
+  }
+  .grid-content h1{
+    font-size: 6.2vw;
+  }
+  .bg-content {
+    margin-top: 42px;
+  }
+}
+
+
